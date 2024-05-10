@@ -1,8 +1,10 @@
 import pandas as pd
 import numpy as np
 import math
+print('Reading moneyData excel......')
 df = pd.read_excel('money.xlsx',index_col=None)
 newdf = df.to_numpy()
+print('Data read complete...')
 
 summaryFlag = False
 topN = 0
